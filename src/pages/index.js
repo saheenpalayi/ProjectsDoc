@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageCard from '@site/src/components/HomepageCard';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -20,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Click to Explore
           </Link>
         </div>
       </div>
@@ -36,7 +37,29 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <div style={{
+          display: 'flex',
+          gap: '2rem',
+          justifyContent: 'center',
+          padding: '2rem',
+          flexWrap: 'wrap'
+        }}>
+          <HomepageCard 
+            title="Projects" 
+            description="Explore innovative projects and ideas"
+            link="/docs/intro"
+          />
+          <HomepageCard 
+            title="Docs" 
+            description="Browse comprehensive documentation"
+            link="/docs/intro"
+          />
+          <HomepageCard 
+            title="Blogs" 
+            description="Read latest articles and updates"
+            link="/blog"
+          />
+        </div>
       </main>
     </Layout>
   );

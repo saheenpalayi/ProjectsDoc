@@ -19,7 +19,7 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
+  // Set the production url of your site here  Copyright © ${new Date().getFullYear()} Saheen Palayi. Built with Docusaurus.
   url: 'http://projects.saheenpalayi.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -87,8 +87,8 @@ const config = {
         title: "Saheen's Doc",
         logo: {
           alt: 'Saheen Logo',
-          src: 'img/logo.svg',
-          srcDark: 'img/logo.svg',
+          src: 'img/icon.png',
+          srcDark: 'img/icon.png',
         },
         items: [
           {
@@ -106,6 +106,11 @@ const config = {
             to: '/blog/',
             position: 'left',
           },
+          {
+            label: 'About Me',
+            to: 'https://saheenpalayi.com/',
+            position: 'left',
+          },
 
           {
             type: 'search',
@@ -113,7 +118,7 @@ const config = {
           },
           {
             label: 'GitHub',
-            href: 'https://github.com',
+            href: 'https://github.com/saheenpalayi',
             position: 'right',
           },
         ],
@@ -125,7 +130,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Projets',
                 to: '/docs/intro',
               },
             ],
@@ -134,12 +139,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/saheenpalayi',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/saheen_palayi',
               },
               {
                 label: 'X',
@@ -156,12 +161,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/saheenpalayi',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Saheen Palayi, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
