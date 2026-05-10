@@ -1,0 +1,8 @@
+{
+  "label": "Motion & Robotics",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Robotics, motion control, and mechanical automation"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Tools & Utilities",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Software tools, scripts, and utilities for makers"
+  }
+}

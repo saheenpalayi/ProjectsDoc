@@ -1,0 +1,8 @@
+{
+  "label": "FPGA & Chip Design",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "FPGA development, HDL, and custom chip design"
+  }
+}
