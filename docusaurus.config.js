@@ -74,6 +74,18 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'projects',
+        path: './projects',
+        routeBasePath: '/projects',
+        sidebarPath: './sidebarsProjects.js',
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -93,7 +105,7 @@ const config = {
         items: [
           {
             label: 'Projects',
-            to: '/docs/intro',
+            to: '/projects/intro',
             position: 'left',
           },
           {
