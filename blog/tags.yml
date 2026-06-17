@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+documentation:
+  label: Documentation
+  permalink: /documentation
+  description: Notes about documenting projects, tutorials, and learning.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+projects:
+  label: Projects
+  permalink: /projects
+  description: Updates and reflections from personal and technical projects.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+fabrication:
+  label: Fabrication
+  permalink: /fabrication
+  description: Digital fabrication, prototyping, and lab workflows.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+electronics:
+  label: Electronics
+  permalink: /electronics
+  description: Electronics experiments, circuits, boards, and debugging notes.
+
+learning:
+  label: Learning
+  permalink: /learning
+  description: Things learned while building, testing, and exploring.

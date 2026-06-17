@@ -1,24 +1,18 @@
 ---
-slug: mdx-blog-post
-title: MDX Blog Post
-authors: [slorber]
-tags: [docusaurus]
+slug: from-project-notes-to-tutorials
+title: From Project Notes to Tutorials
+authors: [saheen]
+tags: [documentation, projects, learning]
 ---
 
-Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
-
-:::tip
-
-Use the power of React to create interactive blog posts.
-
-:::
+Some tutorials on this site will come directly from projects I have built.
 
 {/* truncate */}
 
-For example, use JSX to create an interactive button:
+When I work on a project, I often learn something that can stand on its own: how to test a module, prepare a board for milling, wire a connector, debug firmware, choose a component, or set up a toolchain.
 
-```js
-<button onClick={() => alert('button clicked!')}>Click me!</button>
-```
+The project page will keep the full story of the build. The Docs section will keep the reusable part as a tutorial or reference note.
 
-<button onClick={() => alert('button clicked!')}>Click me!</button>
+This separation is useful because a reader may not need the whole project. They may only need one method, one schematic idea, one command, or one debugging step. Keeping those pieces as tutorials makes the site easier to search and easier to maintain.
+
+Over time, I want this to become a practical knowledge base built from real work, not just finished outcomes.

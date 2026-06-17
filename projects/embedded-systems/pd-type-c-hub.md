@@ -4,14 +4,42 @@ sidebar_position: 1
 
 import pdAdaptor from './media/image1.png';
 import newPDdecoy from './media/image11.png';
+import dsc00971 from './media/DSC00971.jpg';
+import ch224kPdModule from './media/image.png';
+import amazonPdAdaptor from './media/image2.png';
+import usbHubProduct from './media/b31a7f63-649e-4bee-8a1c-6643e5923d2e.png';
+import dsc00960 from './media/DSC00960.jpg';
+import dsc00959 from './media/DSC00959.jpg';
+import sl21aHubChip from './media/image3.png';
+import sl21aDatasheet from './media/image4.png';
+import typeCMaleAdapter from './media/555f2fd1-4511-4812-8515-f9f4ac137835.png';
+import kicadTypeCBreakoutOne from './media/image5.png';
+import kicadTypeCBreakoutTwo from './media/image6.png';
+import kicadTypeCBreakoutThree from './media/image7.png';
+import dsc00935 from './media/DSC00935.jpg';
+import dsc00931 from './media/DSC00931.jpg';
+import dsc00933 from './media/DSC00933.jpg';
+import typeCBreakoutBoard from './media/190d2938-1538-46e0-8dc3-adf1a197652f.png';
+import kicadUsbHubOne from './media/image8.png';
+import kicadUsbHubTwo from './media/image9.png';
+import kicadUsbHubThree from './media/image10.png';
+import dsc00936 from './media/DSC00936_(Medium).jpg';
+import dsc00953 from './media/DSC00953.jpg';
+import dsc00957 from './media/DSC00957.jpg';
+import dsc00967 from './media/DSC00967.jpg';
+import dsc00966 from './media/DSC00966.jpg';
+import dsc00973 from './media/DSC00973.jpg';
+import robomanPdModule from './media/image12.png';
 
 
-# PD Type C HUB
+# USB-C PD Hub (4-Port)
 
 *[Saheen Palayi](https://saheenpalayi.com/) | [Super Fablab Kerala](https://fablabkerala.in/) - Kochi, India | 20 April 2026*
 
 
-![DSC00971.JPG](./media/DSC00971.jpg)
+<div style={{ textAlign: 'center' }}>
+  <img src={dsc00971} width="90%" alt="DSC00971" />
+</div>
 
 ## Intro
 
@@ -21,7 +49,9 @@ I’ve this Idea pondering around in my thoughts for last two years and finally 
 
 the USB PD works Using the CC lines in the Type C which negotioate with the host for the voltage it required. to Understand the PD closer , I’ve tried to make my own PD sink controller, I’ve used a Chinese chip [CH224K](https://www.laskakit.cz/user/related_files/ch224ds1.pdf) which is only cost  ₹50 (under $1) from WCH.
 
-![image.png](./media/image.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={ch224kPdModule} width="50%" alt="CH224K PD module" />
+</div>
 
 GitHub Repo Link:- https://github.com/saheenpalayi/CH224K_USB_PD-Module
 
@@ -38,7 +68,9 @@ The Idea for this Project came to my mind during my visit at Maker fair Shenzhen
 
 From the Indian Market it was hard to find the same PD, and I couldn't buy this because I already hit my purchase limit : ).   and from Indian market I found a PD adaptor which only have 2 type C ports which supports PD , 
 
-![Amzon India Link:- [https://www.amazon.in/Sell-Enterprise-A4809C-Universal-Charging/dp/B0BVMSNDXZ](https://www.amazon.in/Sell-Enterprise-A4809C-Universal-Charging/dp/B0BVMSNDXZ)](./media/image%202.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={amazonPdAdaptor} width="50%" alt="Amazon India PD adaptor" />
+</div>
 
 Amzon India Link:- [https://www.amazon.in/Sell-Enterprise-A4809C-Universal-Charging/dp/B0BVMSNDXZ](https://www.amazon.in/Sell-Enterprise-A4809C-Universal-Charging/dp/B0BVMSNDXZ)
 
@@ -54,23 +86,34 @@ So Those PD towers in Shenzhen got me led this solution of making an attachment 
 
 I’ve been looking for a cheap USB Multiplexer then I found that USB Hub is enough for my exploration, so I bought a cheap USB hub from the market and opened it up for understanding its make and internal circuitry 
 
-![image.png](./media/b31a7f63-649e-4bee-8a1c-6643e5923d2e.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={usbHubProduct} width="50%" alt="USB hub product" />
+</div>
 
 [https://www.amazon.in/Portronics-Mport-3-Port-Aluminium-Type-C/dp/B0DG2SRVW2](https://www.amazon.in/Portronics-Mport-3-Port-Aluminium-Type-C/dp/B0DG2SRVW2)
 
-![DSC00960.JPG](./media/DSC00960.jpg)
-
-![DSC00959.JPG](./media/DSC00959.jpg)
+<div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+  <div style={{flex: 1}}>
+    <img src={dsc00960} alt="DSC00960" />
+  </div>
+  <div style={{flex: 1}}>
+    <img src={dsc00959} alt="DSC00959" />
+  </div>
+</div>
 
 SL2.1A USB 2.0 HUB
 
-![[https://jlcpcb.com/partdetail/CoreChips-SL21A/C192893](https://jlcpcb.com/partdetail/CoreChips-SL21A/C192893)](./media/image%203.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={sl21aHubChip} width="90%" alt="SL2.1A USB hub chip" />
+</div>
 
 [https://jlcpcb.com/partdetail/CoreChips-SL21A/C192893](https://jlcpcb.com/partdetail/CoreChips-SL21A/C192893)
 
 Luckily I found that the IC used for this Hub as  a USB 2.0 HUB chip is easily available in the market in cheaper rate (₹30 ) and I also found a version of it  (SOP16) which is Fabable package
 
-![image Credits:- [https://cdn-shop.adafruit.com/product-files/2991/1811151645_CoreChips-SL2-1A_C192893.pdf](https://cdn-shop.adafruit.com/product-files/2991/1811151645_CoreChips-SL2-1A_C192893.pdf)](./media/image%204.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={sl21aDatasheet} width="90%" alt="SL2.1A datasheet circuit" />
+</div>
 
 image Credits:- [https://cdn-shop.adafruit.com/product-files/2991/1811151645_CoreChips-SL2-1A_C192893.pdf](https://cdn-shop.adafruit.com/product-files/2991/1811151645_CoreChips-SL2-1A_C192893.pdf)
 
@@ -80,7 +123,9 @@ The data sheet of the USB Hub chip also provides a circuit that we can follow an
 
 To workout my idea I need the power O/P connected from the PD adaptor to the USB hub’s Outputs with the CC1 and CC2 lines for power negotiations , and fabricating PCB for the type C connector in fabalab is little too complex so I bought few type C male break out board .
 
-![Image Credits:-[https://hubtronics.in/usb-type-c-male-adapter](https://hubtronics.in/usb-type-c-male-adapter)](./media/555f2fd1-4511-4812-8515-f9f4ac137835.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={typeCMaleAdapter} width="70%" alt="USB Type-C male adapter" />
+</div>
 
 Image Credits:-[https://hubtronics.in/usb-type-c-male-adapter](https://hubtronics.in/usb-type-c-male-adapter)
 
@@ -90,17 +135,30 @@ Kicad Design
 
 The another challenge is that the ports available in the PD adapter in vertical and I wanted it horizontal so I designed and made a small breakout board for the Type C male connector to keep the design suitable for the PD adapter 
 
-![image.png](./media/image%205.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={kicadTypeCBreakoutOne} width="90%" alt="KiCad Type-C breakout design one" />
+</div>
 
-![image.png](./media/image%206.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={kicadTypeCBreakoutTwo} width="90%" alt="KiCad Type-C breakout design two" />
+</div>
 
-![image.png](./media/image%207.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={kicadTypeCBreakoutThree} width="90%" alt="KiCad Type-C breakout design three" />
+</div>
 
-![DSC00935.JPG](./media/DSC00935.jpg)
+<div style={{ textAlign: 'center' }}>
+  <img src={dsc00935} width="90%" alt="DSC00935" />
+</div>
 
-![DSC00931.JPG](./media/DSC00931.jpg)
-
-![DSC00933.JPG](./media/DSC00933.jpg)
+<div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+  <div style={{flex: 1}}>
+    <img src={dsc00931} alt="DSC00931" />
+  </div>
+  <div style={{flex: 1}}>
+    <img src={dsc00933} alt="DSC00933" />
+  </div>
+</div>
 
 the above picture shows how I wired the CC1 and CC2 line to access.  and of course the power lines are not that thick, but that’s fine for now , because its testing 
 
@@ -110,29 +168,55 @@ the above picture shows how I wired the CC1 and CC2 line to access.  and of cour
 
 just like I mentioned for the type c male port , its hard to mill the PCB in Fablab so I’ve used this Breakout board I’ve made long ago ([Repo Link](https://github.com/saheenpalayi/ProshPlay-Type_C-Breakout_Board)) 
 
-![DSC00944 (Medium).JPG](./media/190d2938-1538-46e0-8dc3-adf1a197652f.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={typeCBreakoutBoard} width="90%" alt="Type-C breakout board" />
+</div>
 
 But I removed all of the 5.1K pull down resistors from the breakout so I can connect the connection directly from the resistors pads to the USB Hub board
 
 ### Kicad Design
 
-![image.png](./media/image%208.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={kicadUsbHubOne} width="90%" alt="KiCad USB hub design one" />
+</div>
 
-![image.png](./media/image%209.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={kicadUsbHubTwo} width="90%" alt="KiCad USB hub design two" />
+</div>
 
-![image.png](./media/image%2010.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={kicadUsbHubThree} width="90%" alt="KiCad USB hub design three" />
+</div>
 
-![DSC00936 (Medium).JPG](./media/DSC00936_(Medium).jpg)
 
-![DSC00953.JPG](./media/DSC00953.jpg)
 
-![DSC00957.JPG](./media/DSC00957.jpg)
 
-![DSC00967.JPG](./media/DSC00967.jpg)
+<div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+  <div style={{flex: 1}}>
+    <img src={dsc00936}  alt="DSC00936" />
+  </div>
+  <div style={{flex: 1}}>
+    <img src={dsc00953}  alt="DSC00953" />
+  </div>
+</div>
 
-![DSC00966.JPG](./media/DSC00966.jpg)
+<div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+  <div style={{flex: 1}}>
+    <img src={dsc00957}  alt="DSC00957" />
+  </div>
+  <div style={{flex: 1}}>
+    <img src={dsc00967}  alt="DSC00967" />
+  </div>
+</div>
 
-![DSC00973.JPG](./media/DSC00973.jpg)
+<div style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+  <div style={{flex: 1}}>
+    <img src={dsc00966}  alt="DSC00966" />
+  </div>
+  <div style={{flex: 1}}>
+    <img src={dsc00973}  alt="DSC00973" />
+  </div>
+</div>
 
 [Urumbu PD](../motion-and-robotics/urmbu-pd.md)
 
@@ -151,7 +235,9 @@ Image Credit:- [https://www.flyrobo.in/pd65w-fast-charging-module-dc5525-input-t
 
 **PD65W Fast Charging Module DC5525 Input Type-C PD3.1 PPS QC3.0 Huawei SCP**
 
-![[https://roboman.in/product/pd65w-fast-charging-adapter-power-banks-module-usb-c-pd-65w/](https://roboman.in/product/pd65w-fast-charging-adapter-power-banks-module-usb-c-pd-65w/)](./media/image%2012.png)
+<div style={{ textAlign: 'center' }}>
+  <img src={robomanPdModule} width="50%" alt="Roboman PD65W fast charging module" />
+</div>
 
 [https://roboman.in/product/pd65w-fast-charging-adapter-power-banks-module-usb-c-pd-65w/](https://roboman.in/product/pd65w-fast-charging-adapter-power-banks-module-usb-c-pd-65w/)
 
